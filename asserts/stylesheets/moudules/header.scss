@@ -1,0 +1,283 @@
+/* ========== header ========== */
+.header-7 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 120px;
+}
+
+
+.box {
+  box-sizing: border-box;
+}
+
+
+.box-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+// .logo-img {
+//   // width: 100%;
+//   // height: 100%;
+//   // width: 100px;
+// }
+
+.sp-nav {
+  display: none;
+}
+
+/* ========== nav ========== */
+.box-nav {
+  width: 100%;
+  height: 40px;
+  background: $color5;
+  position: absolute;
+  z-index: 3;
+}
+
+.inner-nav {
+  display: flex;
+  justify-content: center;
+  max-width: 1024px;
+  padding: 0;
+  margin: 0 auto;
+  line-height: 40px;
+  list-style: none;
+  background: $color5;
+}
+
+.menu {
+  // padding: 0 4em;
+  padding: 0 3em;
+  color: $color2;
+
+}
+
+
+.menu:hover {
+  background: #7a7a7a;
+}
+
+// ハンバーガメニュー
+.hambuger_menu_icon {
+  display:none;
+  position: relative;
+  width: 20px;
+  height: 2px;
+  color: $color2;
+  background: currentColor;
+  margin-top: 1px;
+  &::before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    width:  100%;
+    height: 100%;
+    background: currentColor;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    top: 6px;
+    width:  100%;
+    height: 100%;
+    background: currentColor;
+  }
+}
+
+
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+.menu-trigger {
+  display: none;
+  position: relative;
+  width: 20px;
+  height: 10px;
+  span {
+    position: absolute;
+    left: 0;
+    width: 80%;
+    height: 1px;
+    background-color: #333;
+    // background-color:$color2;
+    border-radius: 4px;
+  }
+  span:nth-of-type(1) {
+    top: 0;
+  }
+  span:nth-of-type(2) {
+    top: 10px;
+  }
+  span:nth-of-type(3) {
+    bottom: 4px;
+  }
+  &.active{
+
+    span:nth-of-type(1) {
+      transform: translateY(5px) rotate(-45deg);
+      }
+    span:nth-of-type(2) {
+      opacity: 0;
+      }
+    span:nth-of-type(3) {
+      transform: translateY(0px) rotate(45deg);
+      }
+   }
+}
+
+
+.nav-wrapper{
+  // display: none;
+  visibility:hidden;
+  transition: all .8s;
+  transform: translateX(-1000px); /* right0から250px移動した位置 */
+  // padding: 10px;
+  padding: 16px 13px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  color:$color2;
+  background-color: $color5;
+  // background-color:#1B1310;
+  .header-nav{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    .nav-list{
+      font-size: 25px;
+      display: block;
+      position: absolute;
+      // top: 50%;
+      // left: 50%;
+      top: 40%;
+      left: 25%;
+      transform: translate(-50%,-50%);
+      // text-align: center;
+    }
+    .menu {
+      // padding: 0 2em;
+      padding: 0 1.5em;
+
+      color:$color2;
+  }
+    .nav-item{
+      // margin-right: 0;
+      margin-right: -10px;
+      margin-bottom: 40px;
+      border-bottom: solid white;
+    /* color: #333; */
+    }
+
+  }
+  &.open{
+    transform: translateX(0);
+    // display: block;
+    visibility : visible;
+  }
+}
+
+/* 2カラム */
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+.col_2{
+	width: 100%;
+	display: flex;
+	display: -ms-flexbox; /* IE10 */
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap; /* IE10 */
+  background-color: #005693; /* 背景の色 */
+  color:$color2; /* 文字の色 */
+  text-align: center; /* 内容は中央配置 */
+}
+.col_2 > div{
+	width: 50%;
+	padding: 10px;
+}
+@media screen and (max-width: 640px) {
+	.col_2 > div{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 980px) {
+
+  .header-7 {
+    .menu{
+      padding: 0 1em;
+    }
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+
+  .header-7 {
+    .menu{
+      padding: 0 0.5em;
+    }
+  }
+}
+
+/* ========== sp ========== */
+@media screen and (max-width: 520px) {
+  .header-7 {
+    position: fixed;
+    color:$color2;
+    z-index: 10;
+    // background-color: #f3f3f3;
+    background-color: white;
+    box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+    // background-color: $color4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // justify-content: center;
+    // justify-content: space-between;
+    height: 42px;
+    // height: 60px;
+    padding: 0 0.8em;
+  }
+  p{
+    margin: 0 10px;
+    // font-size: 20px;
+    font-size: 15px;
+  }
+  .box-nav {
+    display: none;
+  }
+
+  .sp-nav {
+    display: block;
+  }
+
+  .box-logo {
+    height: 60px;
+  }
+
+  .logo-img {
+    width: 150px;
+  }
+  .hambuger_menu_icon{
+    display: block;
+  }
+  .menu-trigger {
+    display: block;
+    // z-index: 10;
+  }
+
+
+}
+
+.fixed{
+  position: fixed;
+  top: 0;
+}

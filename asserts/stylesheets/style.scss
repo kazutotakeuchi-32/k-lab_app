@@ -1,0 +1,182 @@
+@import "reset.scss";
+@import "config/config.scss";
+@import "moudules/header.scss";
+@import "moudules/main.scss";
+@import "moudules/footer.scss";
+@import "moudules/modal.scss";
+
+
+
+/*FontAwesomeを使用しています。*/
+.fa-user:before {
+  margin-right: 12px;
+}
+.fa-archive:before{
+  margin-right: 12px;
+}
+.fa-envelope:before{
+  margin-right: 12px;
+}
+.fa-lightbulb{
+  margin-right: 12px;
+}
+.fa-hashtag{
+  margin-right: 12px;
+}
+.fa-check-square{
+  margin-right: 12px;
+}
+p{
+  font-size: 30px;
+}
+
+// font-size: 25px;
+//     display: block;
+//     position: absolute;
+//     top: 40%;
+//     left: 50%;
+//     -webkit-transform: translate(-50%, -50%);
+//     transform: translate(-50%, -50%);
+//     text-align: center;
+// }
+
+
+
+
+
+// &:active span:nth-of-type(1) {
+  //   // transform: translateY(20px) rotate(-45deg);
+  //   // transform: rotate(45deg) translate(-10%, 0);
+  //   transform: translateY(5px) rotate(-45deg);
+  //   // transform-origin: 0% 50%;
+  // }
+  // &:active span:nth-of-type(2) {
+  //   opacity: 0;
+  // }
+
+  // &:active span:nth-of-type(3) {
+  //   transform: translateY(0px) rotate(45deg);
+  //   // transform: rotate(-10deg) translate(-10%, 0);
+  //   // transform-origin: 0% 50%;
+  // }
+
+// .hambuger_menu_icon {
+//   position: relative;
+//   width: 60px;
+//   height: 2px;
+//   color: #000;
+//   background: currentColor;
+//   margin-top: 25px;
+// }
+
+// .hambuger_menu_icon:before {
+//   content: "";
+//   position: absolute;
+//   top: -15px;
+//   width:  100%;
+//   height: 100%;
+//   background: currentColor;
+// }
+
+// .hambuger_menu_icon:after {
+//   content: "";
+//   position: absolute;
+//   top: 15px;
+//   width:  100%;
+//   height: 100%;
+//   background: currentColor;
+// }
+
+  // &:active :nth-of-type(1) {
+  //   transform: translateY(20px) rotate(-45deg);
+  // }
+  // &:active :nth-of-type(2) {
+  //   opacity: 0;
+  // }
+  // &.active :nth-of-type(3) {
+  //   transform: translateY(-20px) rotate(45deg);
+  // }
+
+
+
+// .hambuger_menu_icon {
+// position: absolute;
+//     width: 30px;
+//     height: 4px;
+//     background: #666;
+//     border-radius: 10px;
+//     -webkit-transition: all 400ms;
+//     transition: all 400ms
+// }
+
+// body {
+//   margin: 0 auto;
+// }
+
+// header {
+//   margin: 0,0,0,0;
+//   // text-align: center;
+//   position: fixed;
+//   width: 100%;
+//   background-color: black;
+//   color: #ffffff;
+//   // font-size: 100px;
+//   // position: fixed;
+//   // background-image: url("XZONEX.jpeg");
+//   // background-color: lightcoral;
+//   // height: px;
+// }
+
+// footer {
+//   width: 100%;
+//   background-color:"#333333";
+//   // background-color: lightseagreen;
+//   height: 200px;
+// }
+
+// main {
+//   // width: 600px;
+//   width: 100%;
+//   // margin: auto;
+//   // backgr ound-color: black;
+//   // background-color: lightgreen;
+//   height: 300px;
+// }
+
+// img {
+//   width:100%;
+//   max-width: 100%;
+//   // height: 100%;
+//   height: auto;
+//   }
+
+//   .mobileHidden { display:none;}
+
+//   @media screen and (min-width:480px) {
+//       .desktopHidden { display:none;}
+//       .mobileHidden { display:inline;}
+//   }
+
+
+// // body {
+// //   margin: 0 auto;
+// // }
+
+// // header {
+// //   width: 100%;
+// //   background-color: lightcoral;
+// //   height: 100px;
+// // }
+
+// // footer {
+// //   width: 100%;
+// //   background-color: lightseagreen;
+// //   height: 100px;
+// // }
+
+// // main {
+// //   width: 600px;
+// //   margin: auto;
+// //   background-color: lightgreen;
+// //   height: 300px;
+// // }

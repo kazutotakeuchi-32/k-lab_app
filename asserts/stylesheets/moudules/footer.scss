@@ -1,0 +1,17 @@
+.footer{
+  height: 100px;
+  width: 100%;
+  background-color: $color5;
+  p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    // color: $color2;
+  }
+  @media screen and (max-width: 480px){
+    p{
+      font-size: 10px;
+    }
+  }
+}

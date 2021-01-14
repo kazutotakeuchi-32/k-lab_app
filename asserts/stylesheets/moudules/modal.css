@@ -1,0 +1,317 @@
+#overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+#modal {
+  padding: 24px 10px;
+  overflow: scroll;
+  max-height: 80%;
+  width: 80%;
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 99;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+}
+
+#modal-width_auto {
+  width: auto;
+}
+
+#modal .flexbox {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#modal .flexbox .description__box {
+  width: 33.3333333333%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+#modal .flexbox .description__box p {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 10px;
+  line-height: 2rem;
+}
+
+#modal .flexbox .description__box .center {
+  color: #333333;
+}
+
+#modal .flexbox .description__box .center-align {
+  position: relative;
+  text-align: center;
+}
+
+#modal .flexbox .description__box .center-align h4 {
+  font-size: 20px;
+}
+
+#modal .flexbox .description__box .center-align span {
+  background: #fafafa;
+  padding: 0 10px;
+  position: relative;
+  z-index: 5;
+  color: #333333;
+}
+
+#modal .flexbox .description__box .center-align::before {
+  content: "";
+  display: block;
+  border-top: solid 1px #ddd;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+#modal .flexbox .description__box h4 {
+  font-size: 20px;
+}
+
+#modal .flexbox .description__box h5 {
+  margin-top: 10px;
+}
+
+#modal .flexbox .description__box h5 span {
+  font-size: 18px;
+}
+
+#modal .flexbox .description__box a {
+  color: #039be5;
+  font-size: 14px;
+}
+
+#modal .flexbox .description__box a i {
+  margin-right: 2px;
+}
+
+#modal .flexbox .app_image__box {
+  width: 66.6666666667%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+#modal .flexbox .app_image__box .thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+#modal .flexbox .app_image__box .thumbnails img {
+  margin: 0 2px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 75px;
+  height: 75px;
+  margin-bottom: 1.5rem;
+}
+
+#modal .flexbox .app_image__box .main_image {
+  text-align: center;
+}
+
+#modal .flexbox .app_image__box .main_image img {
+  max-height: 550px;
+  max-width: 100%;
+  width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 360px;
+}
+
+@media screen and (max-width: 780px) {
+  #modal .flexbox .description__box {
+    width: 49%;
+  }
+  #modal .flexbox .description__box a {
+    display: block;
+    padding: 2px 11px;
+  }
+  #modal .flexbox .app_image__box {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #modal .flexbox .description__box {
+    width: 100%;
+  }
+  #modal .flexbox .description__box a {
+    display: block;
+    padding: 2px 11px;
+  }
+  #modal .flexbox .app_image__box {
+    width: 100%;
+  }
+}
+
+#modal .confirmation {
+  height: 100%;
+}
+
+#modal .confirmation h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #424242;
+}
+
+#modal .confirmation p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+#modal .confirmation form {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+#modal .confirmation form .submit-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#modal .confirmation table {
+  max-width: 500px;
+  width: auto;
+  margin: auto;
+  font-size: 20px;
+  color: #333333;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+
+#modal .confirmation table tr, #modal .confirmation table td {
+  padding: 10px;
+}
+
+@media screen and (max-width: 680px) {
+  #modal .confirmation h2 {
+    font-size: 20px;
+    color: #424242;
+  }
+  #modal .confirmation table {
+    margin: 0;
+  }
+  #modal .confirmation table tr, #modal .confirmation table td {
+    display: block;
+    padding: 2px;
+  }
+}
+
+.active {
+  display: block !important;
+}
+
+#close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.confirm__box {
+  color: #333333;
+  width: 50%;
+  height: 500px;
+  border-radius: 10px;
+  border: #dddddd solid 2px;
+  margin: auto;
+  margin-top: 5%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.confirm__box h2 {
+  color: red;
+  margin-top: 80px;
+  font-weight: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.confirm__box a {
+  display: block;
+  font-size: 20px;
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  color: #6adcfa;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.confirm__box p {
+  font-size: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .confirm__box {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .confirm__box {
+    width: 90%;
+    height: 50%;
+    margin: auto;
+    margin-top: 5%;
+  }
+  .confirm__box h2 {
+    font-size: 15px;
+  }
+  .confirm__box a {
+    font-size: 10px;
+  }
+  .confirm__box p {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=modal.css.map */

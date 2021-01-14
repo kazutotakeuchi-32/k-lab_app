@@ -1,0 +1,291 @@
+@charset "UTF-8";
+/* ========== header ========== */
+.header-7 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 120px;
+}
+
+.box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.box-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80px;
+}
+
+.sp-nav {
+  display: none;
+}
+
+/* ========== nav ========== */
+.box-nav {
+  width: 100%;
+  height: 40px;
+  background: #3a3a3a;
+  position: absolute;
+  z-index: 3;
+}
+
+.inner-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1024px;
+  padding: 0;
+  margin: 0 auto;
+  line-height: 40px;
+  list-style: none;
+  background: #3a3a3a;
+}
+
+.menu {
+  padding: 0 3em;
+  color: #fff;
+}
+
+.menu:hover {
+  background: #7a7a7a;
+}
+
+.hambuger_menu_icon {
+  display: none;
+  position: relative;
+  width: 20px;
+  height: 2px;
+  color: #fff;
+  background: currentColor;
+  margin-top: 1px;
+}
+
+.hambuger_menu_icon::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  width: 100%;
+  height: 100%;
+  background: currentColor;
+}
+
+.hambuger_menu_icon::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  width: 100%;
+  height: 100%;
+  background: currentColor;
+}
+
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu-trigger {
+  display: none;
+  position: relative;
+  width: 20px;
+  height: 10px;
+}
+
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 80%;
+  height: 1px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+  top: 10px;
+}
+
+.menu-trigger span:nth-of-type(3) {
+  bottom: 4px;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+  -webkit-transform: translateY(5px) rotate(-45deg);
+          transform: translateY(5px) rotate(-45deg);
+}
+
+.menu-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.menu-trigger.active span:nth-of-type(3) {
+  -webkit-transform: translateY(0px) rotate(45deg);
+          transform: translateY(0px) rotate(45deg);
+}
+
+.nav-wrapper {
+  visibility: hidden;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+  /* right0から250px移動した位置 */
+  padding: 16px 13px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  color: #fff;
+  background-color: #3a3a3a;
+}
+
+.nav-wrapper .header-nav {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.nav-wrapper .header-nav .nav-list {
+  font-size: 25px;
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.nav-wrapper .header-nav .menu {
+  padding: 0 1.5em;
+  color: #fff;
+}
+
+.nav-wrapper .header-nav .nav-item {
+  margin-right: -10px;
+  margin-bottom: 40px;
+  border-bottom: solid white;
+  /* color: #333; */
+}
+
+.nav-wrapper.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  visibility: visible;
+}
+
+/* 2カラム */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.col_2 {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  /* IE10 */
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  background-color: #005693;
+  /* 背景の色 */
+  color: #FFF;
+  /* 文字の色 */
+  text-align: center;
+  /* 内容は中央配置 */
+}
+
+.col_2 > div {
+  width: 50%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .col_2 > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .header-7 .menu {
+    padding: 0 1em;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .header-7 .menu {
+    padding: 0 0.5em;
+  }
+}
+
+/* ========== sp ========== */
+@media screen and (max-width: 520px) {
+  .header-7 {
+    position: fixed;
+    color: #fff;
+    z-index: 10;
+    background-color: white;
+    -webkit-box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 42px;
+    padding: 0 0.8em;
+  }
+  p {
+    margin: 0 10px;
+    font-size: 15px;
+  }
+  .box-nav {
+    display: none;
+  }
+  .sp-nav {
+    display: block;
+  }
+  .box-logo {
+    height: 60px;
+  }
+  .logo-img {
+    width: 150px;
+  }
+  .hambuger_menu_icon {
+    display: block;
+  }
+  .menu-trigger {
+    display: block;
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+/*# sourceMappingURL=header.css.map */
