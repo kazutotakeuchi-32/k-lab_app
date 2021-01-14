@@ -46,3 +46,5 @@ class FunctionTest extends \PHPUnit\Framework\TestCase{
     $this->assertEquals("お問い合わせ内容は必ず入力をしてください。",validation(($user))[0]);
   }
 }
+
+// https://kazu-lab.herokuapp.com/ | https://git.heroku.com/kazu-lab.git
