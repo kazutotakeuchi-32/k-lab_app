@@ -1,4 +1,10 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer's autoloader
+require 'vendor/autoload.php';
+
 function validation($user){
    $errors = [];
    $name  = $user['name'];
@@ -27,23 +33,23 @@ function get_csrf_token() {
 function h($filed){
    return htmlspecialchars($filed,ENT_QUOTES,'UTF-8');
 }
-function send_mail($user){
-  mb_language("ja");
-  mb_internal_encoding("UTF-8");
-  $name    =  $user['name'];
-  $email   =  $user['email'];
-  $message =  $user['message'];
-  $to      =  $email;
-  $time    =  date("Y年m月d日 H時i分");
-  $subject =  "{$name}様お問い合わせありがとうございます";
-  $body    =  "※こちらのメールは自動送信になります。\n\n{$name}様この度は、お問い合わせ頂き誠にありがとうございます。下記の内容でお問い合わせを受け付けました。\n\nお問い合わせ日時：{$time}\n氏名：{$name}\nメールアドレス：{$email}\nお問い合わせ内容：{$message}\n\nできる限り迅速な対応を致します。なお2~3日ほどお時間をいただく場合がありますので予めご了承ください。ご不明な点がありましたらお気軽にお問い合わせください。";
-  $headers = array(
-  'Reply-To' => 'webmaster@example.com',
-  'X-Mailer' => 'PHP/' . phpversion(),
-  "Content-Type"=>"ext/plain; charset=UTF-8"
-);
- return mb_send_mail( $email,$subject,$body);
-}
+// function send_mail($user){
+//   mb_language("ja");
+//   mb_internal_encoding("UTF-8");
+//   $name    =  $user['name'];
+//   $email   =  $user['email'];
+//   $message =  $user['message'];
+//   $to      =  $email;
+//   $time    =  date("Y年m月d日 H時i分");
+//   $subject =  "{$name}様お問い合わせありがとうございます";
+//   $body    =  "※こちらのメールは自動送信になります。\n\n{$name}様この度は、お問い合わせ頂き誠にありがとうございます。下記の内容でお問い合わせを受け付けました。\n\nお問い合わせ日時：{$time}\n氏名：{$name}\nメールアドレス：{$email}\nお問い合わせ内容：{$message}\n\nできる限り迅速な対応を致します。なお2~3日ほどお時間をいただく場合がありますので予めご了承ください。ご不明な点がありましたらお気軽にお問い合わせください。";
+//   $headers = array(
+//   'Reply-To' => 'webmaster@example.com',
+//   'X-Mailer' => 'PHP/' . phpversion(),
+//   "Content-Type"=>"ext/plain; charset=UTF-8"
+// );
+//  return mb_send_mail( $email,$subject,$body);
+// }
 function send_notify($user){
   if (count($user)==0) {
     return false;
@@ -68,4 +74,50 @@ function send_notify($user){
   $res = json_decode(curl_exec($ch),true);
   curl_close($ch);
   return $res ;
+}
+
+function send_mail($user){
+  $mail = new PHPMailer(true);
+  $name    =  $user['name'];
+  $email   =  $user['email'];
+  $message =  $user['message'];
+  $time    =  date("Y年m月d日 H時i分");
+  try {
+    //Gmail 認証情報
+    $host    = 'smtp.gmail.com';
+    $username=getenv('USERNAME');
+    $password=getenv('PASSWORD');
+    //差出人
+    $from = $username;
+    $fromname =$username;
+    //宛先
+    $to = $email;
+    $toname = '';
+    //件名・本文
+    $subject =  "{$name}様お問い合わせありがとうございます";
+    $body = "※こちらのメールは自動送信になります。\n\n{$name}様この度は、お問い合わせ頂き誠にありがとうございます。下記の内容でお問い合わせを受け付けました。\n\nお問い合わせ日時：{$time}\n氏名：{$name}\nメールアドレス：{$email}\nお問い合わせ内容：{$message}\n\nできる限り迅速な対応を致します。なお2~3日ほどお時間をいただく場合がありますので予めご了承ください。ご不明な点がありましたらお気軽にお問い合わせください。";
+    //メール設定
+    // $mail->SMTPDebug = 2; //デバッグ用
+    $mail->isSMTP();
+    $mail->SMTPAuth = true;
+    $mail->Host = $host;
+    $mail->Username = $username;
+    $mail->Password = $password;
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
+    $mail->CharSet = "utf-8";
+    $mail->Encoding = "base64";
+    $mail->setFrom($from, $fromname);
+    $mail->addAddress($to, $toname);
+    $mail->Subject = $subject;
+    $mail->Body    = $body;
+
+    //メール送信
+    return $mail->send();
+
+
+  } catch (Exception $e) {
+    // echo '失敗: ', $mail->ErrorInfo;
+  }
+
 }
