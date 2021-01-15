@@ -52,7 +52,6 @@
         ]
       }
     },
-
     {
       app:{
         name:"Kazugramming bot LINE",

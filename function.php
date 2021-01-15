@@ -1,10 +1,7 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
-//Load Composer's autoloader
 require 'vendor/autoload.php';
-
 function validation($user){
    $errors = [];
    $name  = $user['name'];
@@ -33,28 +30,11 @@ function get_csrf_token() {
 function h($filed){
    return htmlspecialchars($filed,ENT_QUOTES,'UTF-8');
 }
-// function send_mail($user){
-//   mb_language("ja");
-//   mb_internal_encoding("UTF-8");
-//   $name    =  $user['name'];
-//   $email   =  $user['email'];
-//   $message =  $user['message'];
-//   $to      =  $email;
-//   $time    =  date("Y年m月d日 H時i分");
-//   $subject =  "{$name}様お問い合わせありがとうございます";
-//   $body    =  "※こちらのメールは自動送信になります。\n\n{$name}様この度は、お問い合わせ頂き誠にありがとうございます。下記の内容でお問い合わせを受け付けました。\n\nお問い合わせ日時：{$time}\n氏名：{$name}\nメールアドレス：{$email}\nお問い合わせ内容：{$message}\n\nできる限り迅速な対応を致します。なお2~3日ほどお時間をいただく場合がありますので予めご了承ください。ご不明な点がありましたらお気軽にお問い合わせください。";
-//   $headers = array(
-//   'Reply-To' => 'webmaster@example.com',
-//   'X-Mailer' => 'PHP/' . phpversion(),
-//   "Content-Type"=>"ext/plain; charset=UTF-8"
-// );
-//  return mb_send_mail( $email,$subject,$body);
-// }
 function send_notify($user){
   if (count($user)==0) {
     return false;
   }
-  $token = 'HBxRa5q2uKjhuB6c4mCeftSClMevy1nwaNamBtkawTj';
+  $token = getenv('LINE_NOTIFY_TOKEN');
   // リクエストヘッダの作成
   $message = "\n{$user['name']}様からお問い合わせがありました。\n\nお名前：{$user['name']}\nメールアドレス：{$user['email']}\nお問合わせ内容:{$user['message']}";
   $query = http_build_query(['message' => $message]);
@@ -114,7 +94,6 @@ function send_mail($user){
 
     //メール送信
     return $mail->send();
-
 
   } catch (Exception $e) {
     // echo '失敗: ', $mail->ErrorInfo;
