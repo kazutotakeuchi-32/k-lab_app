@@ -36,7 +36,7 @@ function send_notify($user){
   }
   $token = getenv('LINE_NOTIFY_TOKEN');
   // リクエストヘッダの作成
-  $message = "\n{$user['name']}様からお問い合わせがありました。\n\nお名前：{$user['name']}\nメールアドレス：{$user['email']}\nお問合わせ内容:{$user['message']}";
+  $message   = "\n{$user['name']}様からお問い合わせがありました。\n\nお名前：{$user['name']}\nメールアドレス：{$user['email']}\nお問合わせ内容:{$user['message']}";
   $query = http_build_query(['message' => $message]);
   $header = [
           'Content-Type: application/x-www-form-urlencoded',

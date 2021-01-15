@@ -1651,7 +1651,7 @@ body {
 }
 
 #modal .flexbox .description__box .center-align span {
-  background: #fafafa;
+  background: white;
   padding: 0 10px;
   position: relative;
   z-index: 5;
