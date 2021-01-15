@@ -247,7 +247,7 @@ function validation(name,email,message){
   }
   if (email.value.length==[]) {
     errs.push("メールアドレスを入力をしてください。")
-  }else if (!email.value.match(/^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_-]{1,}\.[A-Za-z0-9]{1,}$/) ) {
+  }else if (!email.value.match(/^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$/) ) {
     errs.push("メールアドレスの形式に誤りがあります。")
   }
   if (message.value.length==[]) {
