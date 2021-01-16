@@ -220,7 +220,7 @@
           </div>
           <div class="main_image">
             ${url?
-              ` "<a  href="${url}"><img class="main_image__content" src="asserts/images/${images[0].src}" alt="" width="100px" height="100px"></a>"`
+              ` <a  href="${url}"><img class="main_image__content" src="asserts/images/${images[0].src}" alt="" width="100px" height="100px"></a>`
               :
               `<img class="main_image__content" src="asserts/images/${images[0].src}" alt="" width="100px" height="100px">`}
           </div>
