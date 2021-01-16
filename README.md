@@ -1,12 +1,12 @@
 # K-LAB
-![k-lab](/asserts/images/k-lab.png)<br>
+![k-lab](/asserts/images/k-lab.png)<br><br>
 K-LABは、僕が作成したオリジナルアプリをまとめたサイトになります。
 # Description
   - オリジナルアプリ掲載
   - お問い合わせ
   - 自動返信メール
 # Demo
-下記のURLからご参照ください。<br>
+下記のURLからご参照ください。<br>)<br>
 [K-LAB](https://k-lab32.herokuapp.com/)
 # Requirement
   - PHP 7.0
