@@ -6,7 +6,7 @@ K-LABは、僕が作成したオリジナルアプリをまとめたサイトに
   - お問い合わせ
   - 自動返信メール
 # Demo
-下記のURLからご参照ください。<br>)<br>
+下記のURLからご参照ください。<br><br>
 [K-LAB](https://k-lab32.herokuapp.com/)
 # Requirement
   - PHP 7.0
