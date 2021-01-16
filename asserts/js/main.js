@@ -139,6 +139,12 @@
           case "kazugramming_bot":
             i = 3
             break;
+          case "k-step":
+            i = 4
+            break
+          case "breakout_game":
+            i = 5
+            break
         }
         $("#overlay, #modal").addClass("active");
         $("#modal .flexbox").append(buildHtml(apps[i]))
