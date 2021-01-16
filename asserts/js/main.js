@@ -3,8 +3,8 @@
      {
         app:{
           name:"kazugramming",
-          description:'<p>僕が運営をしているプログラミング特化サイトです。主に</p><p>興味がある方はこちらから</p>',
-          technologyUsed:'<p>HTML CSS jQurey PHP XSERVER',
+          description:'<p>僕が運営をしているプログラミング特化サイトです。プログラミングの基礎から応用まで、幅広く記事を執筆をしています。LINEやTwitterなどのサービスと連携をして記事を発信をしていますので、プログラムを組んで、アプリを作ってみたい方は、当ブログ「kazugramming」を覗いてみてください。</p>',
+          technologyUsed:'<p>HTML、CSS、jQurey、PHP、Xserver',
           url:"https://taketon-blog.com/kazugramming/",
           git:false,
           blog:false,
@@ -21,8 +21,8 @@
     {
       app:{
         name:"Typing Game",
-        description:'<p>Reactを学習をして１週間で作成したアプリです。</p><p>興味がある方はこちらから</p>',
-        technologyUsed:'<p>HTML CSS React</p>',
+        description:'<p>Reactを学習をして１週間で作成したアプリです。素のJavaScriptで作成した「Typing Game」をReactの環境に適応する様にカスタマイズをしていきました。バーチャルDOMやJSXという新しい概念に違和感を感じましたが、アプリが完成する頃には違和感が解消され、JSXの記法がとてもクセになりました。</p>',
+        technologyUsed:'<p>HTML、CSS、React,github pages</p>',
         url:"https://kazutotakeuchi-32.github.io/typing/",
         git:"https://github.com/kazutotakeuchi-32/typing",
         blog:"https://taketon-blog.com/kazugramming/%e3%82%bf%e3%82%a4%e3%83%94%e3%83%b3%e3%82%b0%e3%82%b2%e3%83%bc%e3%83%a0%e3%82%92%e4%bd%9c%e3%82%8d%e3%81%86/",
@@ -36,8 +36,8 @@
     {
       app:{
         name:"エクスプレッシブタイピング",
-        description:'<p>プログラミング初めて3ヶ月で作成したアプリになります。エクスプレシッブライティングという鬱病の治療に用いれられるテクニックをPCに転用しました。</p><p>「ひたすらにタイピングをする」という動作を取ることでストレス解消の効果が期待され、更にワーキングメモリ力も上がります。  </p>',
-        technologyUsed:'<p>HTML CSS JavaScrpt Ruby on Rails mysql(開発) postSql(本番) Heroku</p>',
+        description:'<p>プログラミングを初めて3ヶ月で作成したアプリになります。エクスプレシッブライティングという鬱病の治療に用いれられるテクニックをPCに転用しました。</p><p>「ひたすらにタイピングをする」という動作を取ることでストレス解消の効果が期待され、更にワーキングメモリ力も上がります。  </p>',
+        technologyUsed:'<p>HTML、CSS、JavaScrpt、Ruby on Rails、mysql(開発)、postSql(本番)、Heroku</p>',
         url:"https://calm-peak-17615.herokuapp.com/",
         git:"https://github.com/kazutotakeuchi-32/clean_typing_app",
         blog:"https://taketon-blog.com/kazugramming/%e3%82%a8%e3%82%af%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%82%b7%e3%83%96%e3%82%bf%e3%82%a4%e3%83%94%e3%83%b3%e3%82%b0%e6%a6%82%e8%a6%81/",
@@ -54,9 +54,9 @@
     },
     {
       app:{
-        name:"Kazugramming bot LINE",
+        name:"Kazugramming LINE bot",
         description:'<p>「kazugramming」のLINE botです。よく読まれる記事や、最新記事に素早くアクセスができます。リッチメニューがあるのでとても良い使用感になっております。</p><p>ぜひ使ってみてください。</p>',
-        technologyUsed:'<p> Ruby on Rails PHP WorrdPress LINE MESSAGE API WP API  Heroku</p>',
+        technologyUsed:'<p> Ruby on Rails、PHP、WorrdPress、LINE MESSAGE API、WP API、Heroku</p>',
         url:"https://line.me/R/ti/p/%40378klewh",
         git:"https://github.com/kazutotakeuchi-32/kazugramming_app",
         blog:false,
@@ -65,7 +65,39 @@
           {class:"kazugramming_bot",src:`kazugramming_bot2.png`},
         ]
       }
-    }]
+    },
+    {
+      app:{
+        name:"K-STEP",
+        description:'<p>LステップというLINEの配信サービスの「ステップシナリオ配信」を参考にして、当ブログ「Kazugramming」のTwitter botにもステップ配信を導入をしました。LINE Notfy APIを用いて、ステップ配信開始日とステップ配信終了日を通知をすることで管理をしています。また、crontabファイル内にジョブを設定をして、決まった時刻に配信ができる様に制御をしています。</p>',
+        technologyUsed:'<p>Python、Twitter API、LINE Notify API、cron</p>',
+        url:false,
+        git:"https://github.com/kazutotakeuchi-32/k-step",
+        blog:false,
+        images:[
+          {class:"k-step",src:`k-step1.png`},
+          {class:"k-step",src:`k-step2.png`},
+          {class:"k-step",src:`k-step3.png`},
+          {class:"k-step",src:`k-step4.png`},
+          {class:"k-step",src:`k-step5.png`},
+        ]
+      }
+    },
+    {
+      app:{
+        name:"ブロック崩しゲーム",
+        description:'<p>複雑なプログラムを組みトレーニングとして、ブロック崩しゲームを作成をしてみました。座標の設定や衝突判定のロジックを組むのは、とても難易度が高かったです。ブログに解説記事がありますので、よろしければご参照してください。</p>',
+        technologyUsed:'<p>HTML、CSS、JavaScript,github pages</p>',
+        url:"https://kazutotakeuchi-32.github.io/breakout_game/",
+        git:"https://github.com/kazutotakeuchi-32/breakout_game",
+        blog:"https://taketon-blog.com/kazugramming/%e3%83%96%e3%83%ad%e3%83%83%e3%82%af%e5%b4%a9%e3%81%97%e3%82%b2%e3%83%bc%e3%83%a0/",
+        images:[
+          {class:"breakout_game",src:`breakout_game1.png`},
+          {class:"breakout_game",src:`breakout_game2.gif`},
+        ]
+      }
+    }
+  ]
   let i = 0;
   var _window = $(window),
   _header = $('.box-nav'),
@@ -97,13 +129,6 @@
   });
 
   // ハンバーガーメニュ-
-
-  // $('.menu-trigger').each(function () {
-  //   $(this).click(function(){
-  //     $(this).toggleClass('active')
-  //     $(".nav-wrapper").toggleClass('open')
-  //   })
-  // })
 
   $('.menu-trigger').click(function () {
       $('.menu-trigger').each(function(){
@@ -149,7 +174,7 @@
         $("#overlay, #modal").addClass("active");
         $("#modal .flexbox").append(buildHtml(apps[i]))
         $(`.${apps[i].app.images[0].class}`).click(function(){
-        $(".main_image")[0].children[0].children[0].src=$(this).attr("src")
+        $(`.main_image__content`)[0].src=$(this).attr("src")
         })
     });
   });
@@ -177,8 +202,8 @@
           <span style="${name.length >=13 ? "font-size: 15px;":""}">${name}</span>
           </h4>
           ${description}
-          <a href="${url}"><i class="fas fa-video" ></i>Demo</a>
-          ${git ? `<a href="${git}"><i class="fab fa-github"></i>GitHub</a>`:""}
+          ${url  ? `<a href="${url}"><i class="fas fa-video" ></i>Demo</a>`:""}
+          ${git  ? `<a href="${git}"><i class="fab fa-github"></i>GitHub</a>`:""}
           ${blog ? `<a href="${blog}"><i class="fab fa-wordpress"></i>ブログ</a>`:""}
           <h5 class="center-align">
             <span class="dd">使用技術</span>
@@ -194,7 +219,10 @@
             }
           </div>
           <div class="main_image">
-            <a href="${url}"><img class="" src="asserts/images/${images[0].src}" alt="" width="100px" height="100px"></a>
+            ${url?
+              ` "<a  href="${url}"><img class="main_image__content" src="asserts/images/${images[0].src}" alt="" width="100px" height="100px"></a>"`
+              :
+              `<img class="main_image__content" src="asserts/images/${images[0].src}" alt="" width="100px" height="100px">`}
           </div>
         </div>
       </div>

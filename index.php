@@ -217,6 +217,12 @@
         <li class="gallery__item">
           <img class="image4" src="asserts/images/kazugramming_bot1.png" alt="kazugramming_bot" width="100px" height="100px">
         </li>
+        <li class="gallery__item">
+          <img class="image5" src="asserts/images/k-step1.png" alt="k-step" width="100px" height="100px">
+        </li>
+        <li class="gallery__item">
+          <img class="image6" src="asserts/images/breakout_game1.png" alt="breakout_game" width="100px" height="100px">
+        </li>
       </div>
     </section>
     <section class="contact">
