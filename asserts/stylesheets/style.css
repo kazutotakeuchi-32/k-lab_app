@@ -1346,7 +1346,7 @@ main .archive .gallery__item:nth-child(2n) {
     width: 250px;
     height: 162px;
   }
-  main .archive .gallery__item .image2, main .archive .gallery__item .image4 {
+  main .archive .gallery__item .image2, main .archive .gallery__item .image4, main .archive .gallery__item .image6 {
     margin: 0 -10px;
   }
   main .archive .gallerylist {

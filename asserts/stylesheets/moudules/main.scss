@@ -721,6 +721,7 @@ main{
         h2{
           padding-bottom: 30px;
         }
+
       }
     }
     @media screen and (max-width: 480px) {
@@ -731,12 +732,13 @@ main{
         h2{
           padding-bottom: 30px;
         }
+
         .gallery{
 
           &__item{
             width: 250px;
             height: 162px;
-            .image2 , .image4{
+            .image2 , .image4 ,.image6{
               margin: 0 -10px;
             }
 
