@@ -47,9 +47,7 @@
           </ul>
         </nav>
   </div>
-
   <header class="header-7">
-
     <button class="menu-trigger">
       <span></span>
       <span></span>
@@ -108,31 +106,31 @@
             <div class="front-end box">
               <h3>Front-end</h3>
               <div class="gage-area">
-                <div class="skillbar skillbar-html" data-percent="88">
+                <div class="skillbar skillbar-html" data-percent="60">
                   <div class="skillbar-title">HTML5</div>
                   <div class="skillbar-bar"></div>
                   <div class="skill-bar-percent"></div>
-                <div class="skillbar skillbar-css" data-percent="72">
+                <div class="skillbar skillbar-css" data-percent="60">
                 <div class="skillbar-title">CSS</div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div>
-              <div class="skillbar skillbar-scss" data-percent="72">
+              <div class="skillbar skillbar-scss" data-percent="50">
                 <div class="skillbar-title">SCSS</div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div>
-              <div class="skillbar skillbar-js" data-percent="41">
+              <div class="skillbar skillbar-js" data-percent="70">
                 <div class="skillbar-title">JavaScript</div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div>
-              <div class="skillbar skillbar-js" data-percent="41">
+              <div class="skillbar skillbar-js" data-percent="60">
                 <div class="skillbar-title">jquery</div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div>
-              <div class="skillbar skillbar-react" data-percent="41">
+              <div class="skillbar skillbar-react" data-percent="60">
                 <div class="skillbar-title">React</div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
@@ -143,28 +141,28 @@
             <div class="back-end box">
               <h3>Back-end</h3>
               <div class="gage-area">
-                <div class="skillbar skillbar-ruby" data-percent="88">
+                <div class="skillbar skillbar-ruby" data-percent="70">
                   <div class="skillbar-title">Ruby</div>
                   <div class="skillbar-bar"></div>
                   <div class="skill-bar-percent"></div>
 
-                   <div class="skillbar skillbar-ruby_on_rails" data-percent="72">
+                   <div class="skillbar skillbar-ruby_on_rails" data-percent="60">
                 <div class="skillbar-title">Ruby on Rails</div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div>
-              <div class="skillbar skillbar-python" data-percent="41">
+              <div class="skillbar skillbar-python" data-percent="40">
                 <div class="skillbar-title">Python</div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div>
-              <div class="skillbar skillbar-php" data-percent="41">
+              <div class="skillbar skillbar-php" data-percent="40">
                 <div class="skillbar-title">PHP</div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
               </div>
 
-              <div class="skillbar skillbar-mysql" data-percent="41">
+              <div class="skillbar skillbar-mysql" data-percent="50">
                 <div class="skillbar-title">Mysql</div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent"></div>
@@ -175,26 +173,26 @@
       <div class="devops box">
         <h3>DevOps</h3>
         <div class="gage-area">
-          <div class="skillbar skillbar-docker" data-percent="88">
+          <div class="skillbar skillbar-docker" data-percent="40">
             <div class="skillbar-title">Docker</div>
             <div class="skillbar-bar"></div>
             <div class="skill-bar-percent"></div>
-          <div class="skillbar skillbar-aws" data-percent="72">
+          <div class="skillbar skillbar-aws" data-percent="40">
           <div class="skillbar-title">AWS</div>
           <div class="skillbar-bar"></div>
           <div class="skill-bar-percent"></div>
         </div>
-        <div class="skillbar skillbar-git" data-percent="41">
+        <div class="skillbar skillbar-git" data-percent="40">
           <div class="skillbar-title">Git</div>
           <div class="skillbar-bar"></div>
           <div class="skill-bar-percent"></div>
         </div>
-        <div class="skillbar skillbar-slack" data-percent="41">
+        <div class="skillbar skillbar-slack" data-percent="40">
           <div class="skillbar-title">Slack</div>
           <div class="skillbar-bar"></div>
           <div class="skill-bar-percent"></div>
         </div>
-        <div class="skillbar skillbar-wordpress" data-percent="41">
+        <div class="skillbar skillbar-wordpress" data-percent="50">
           <div class="skillbar-title">Wordpress</div>
           <div class="skillbar-bar"></div>
           <div class="skill-bar-percent"></div>
