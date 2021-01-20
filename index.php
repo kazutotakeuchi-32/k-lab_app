@@ -224,6 +224,8 @@
       </div>
     </section>
     <section class="contact">
+      <!-- <div class="box">
+      </div> -->
       <h2><i class="fas fa-envelope"></i>CONTACT</h2>
       <p>お気軽にお問い合わせください。</p>
       <div class="get-in-touch">
