@@ -1,5 +1,5 @@
 # K-LAB
-![k-lab](/asserts/images/k-lab.png)<br><br>
+![k-lab](/asserts/images/k-LAB.002.jpeg)<br><br>
 K-LABは、僕が作成したオリジナルアプリをまとめたサイトになります。
 # Description
   - オリジナルアプリ掲載
