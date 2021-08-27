@@ -91,7 +91,7 @@
               <div class="section1-item2">
                 <ul>
                   <li>：　KAZUTO TAKEUCHI</li>
-                  <li>：　21</li>
+                  <li>：　22</li>
                   <li>：　JAPAN</li>
                   <li>：　GAME</li>
                 </ul>
